@@ -1,6 +1,5 @@
 FROM python:2
 
-RUN deb http://cz.archive.ubuntu.com/ubuntu raring main
 
 RUN apt-get update \
     && apt-get install -y \
@@ -14,6 +13,9 @@ RUN apt-get update \
         alsa-base \
         alsa-utils \
         pulseaudio
+
+RUN deb http://cz.archive.ubuntu.com/ubuntu raring main
+
 
 
 COPY requirements.txt ./
