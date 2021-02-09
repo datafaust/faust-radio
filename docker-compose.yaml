@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+  faust-radio:
+    image: faust-radio
+    #restart: no
+    container_name: faust-radio
+    build: ./
+    ports:
+      - 5000:5000
+
+      
+networks:
+  default:
+    external:
+      name: my-net

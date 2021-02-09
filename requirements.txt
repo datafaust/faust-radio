@@ -1,0 +1,10 @@
+matplotlib
+termcolor
+scipy
+pydub
+PyAudio
+flask
+werkzeug
+flask_cors
+flask_restful
+imutils
