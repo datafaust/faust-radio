@@ -9,12 +9,12 @@ RUN apt-get update \
         wget \
         ffmpeg \
         portaudio19-dev \
-        python-pyaudio \
-        alsa-base \
-        alsa-utils \
-        pulseaudio
+        python-pyaudio #\
+        #alsa-base \
+        #alsa-utils \
+        #pulseaudio
 
-RUN deb http://cz.archive.ubuntu.com/ubuntu raring main
+#RUN deb http://cz.archive.ubuntu.com/ubuntu raring main
 
 
 
