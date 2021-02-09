@@ -9,16 +9,17 @@ RUN apt-get update \
         wget \
         ffmpeg \
         portaudio19-dev \
-        python-pyaudio #\
-        #alsa-base \
-        #alsa-utils \
+        python-pyaudio 
+
+        #alsa-base 
+        #alsa-utils 
         #pulseaudio
 
 #RUN deb http://cz.archive.ubuntu.com/ubuntu raring main
 
 
 
-#COPY requirements.txt ./
+COPY requirements.txt ./
 
 WORKDIR /
 
@@ -27,7 +28,7 @@ RUN pip install termcolor
 RUN pip install scipy
 RUN pip install pydub
 RUN pip install PyAudio
-#RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 
 COPY . /
